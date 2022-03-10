@@ -43,6 +43,7 @@ body {
     text-shadow: 1px #000000;
     padding: 8px 16px;
     transition: .3s ease-in-out;
+    border-bottom: 3px solid transparent;
 }
 
 #navlinks li a:visited {
@@ -54,7 +55,7 @@ body {
     color: white;
     text-decoration: none;
     background-color: #151515;
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid white;
 }
 
 #mainhead {
@@ -77,8 +78,79 @@ body {
 
 #mainhead p {
     text-align: center;
+    color: white;
+    font-size: large;
+    margin-bottom: 30px;
 }
 
 .image {
     box-shadow: 4px 4px 4px 4px #000;
 }
+
+.sidenav {
+    height: auto;
+    width: max-content;
+    position: fixed;
+    z-index: 95;
+    top: 0;
+    left: 0;
+    background-color: #303030;
+    overflow-x: hidden;
+    padding-top: 40px;
+    border-left: 2px solid transparent;
+    box-shadow: 4px 4px 8px #111;
+}
+
+.sidenav a {
+    padding: 6px 12px 6px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffeeee;
+    display: block;
+    border-left: 2px solid transparent;
+    transition: .3s ease-in-out;
+}
+
+.sidenav a:hover {
+    background-color: #000000;
+    border-left: 2px solid white;
+}
+
+.systemgallery {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.systemgallery>img {
+    width: 20%;
+    height: 20%;
+    border: 2px solid #959595;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px #111111;
+    margin: 5px;
+}
+
+
+/*
+#sunhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    margin-top: 40px;
+}
+
+#sunhead h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+#sunhead p {
+
+}*/
